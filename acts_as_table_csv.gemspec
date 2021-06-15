@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir['.yardopts', 'lib/**/*', 'LICENSE', 'Rakefile', 'README.md']
 
-  s.add_runtime_dependency 'acts_as_table', '~> 0.0.1'
+  s.add_runtime_dependency 'acts_as_table', '>= 0.0.1', '< 0.1'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'redcarpet'
