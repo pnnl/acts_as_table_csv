@@ -25,6 +25,13 @@ module ActsAsTable::CSV
       super(row_model, input, **options, &block)
     end
 
+    # Returns the line number of the last row read from the input stream.
+    #
+    # @return [Fixnum]
+    def lineno
+      @csv.lineno
+    end
+
     # Returns a pair, where the first element is the next row or +nil+ if input stream is at end of file and the second element indicates if input stream is at end of file.
     #
     # @return [Object]
